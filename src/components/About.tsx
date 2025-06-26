@@ -66,7 +66,7 @@ const About = () => {
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="space-y-6 text-gray-700 leading-relaxed">
                   <p>
-                    With over 8 years of experience in software development, I've had the privilege 
+                    With over 5+ years of experience in software development, I've had the privilege 
                     of working on diverse projects ranging from mobile applications that serve 
                     millions of users to enterprise web solutions that streamline business operations.
                   </p>

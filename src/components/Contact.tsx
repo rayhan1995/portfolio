@@ -55,19 +55,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'john.smith@example.com',
-      href: 'mailto:john.smith@example.com'
+      value: 'rayhanfx2@gmail.com',
+      href: 'mailto:rayhanfx2@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+880 1766561636',
+      href: 'tel:+8801766561636'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Zigatola New Road, Dhanmondi, Dhaka-1209',
       href: '#'
     }
   ];
@@ -76,7 +76,7 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: '#',
+      href: 'https://github.com/rayhan1995',
       color: 'hover:text-gray-800'
     },
     {
@@ -86,10 +86,10 @@ const Contact = () => {
       color: 'hover:text-blue-600'
     },
     {
-      icon: Twitter,
-      label: 'Twitter',
-      href: '#',
-      color: 'hover:text-blue-400'
+      icon: Facebook,
+      label: 'Facebook',
+      href: 'https://facebook.com/silence.rayhan.3',
+      color: 'hover:text-blue-500'
     }
   ];
 
@@ -283,7 +283,7 @@ const Contact = () => {
           {/* Footer */}
           <div className="mt-16 text-center border-t border-gray-200 pt-8">
             <p className="text-gray-600">
-              © 2024 John Smith. Built with React, TypeScript & Tailwind CSS.
+              © 2025 Md Rayhan Uddin Bhuyan. Made with ❤️ & React.
             </p>
           </div>
         </div>

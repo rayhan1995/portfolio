@@ -157,6 +157,8 @@ const Skills = () => {
           </div>
 
           {/* Certifications Section */}
+
+          {/*
           <div className="bg-gray-100 rounded-3xl p-12 shadow-neumorphic-large">
             <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">
               Professional Certifications
@@ -178,13 +180,15 @@ const Skills = () => {
             </div>
           </div>
 
+          */}
+
           {/* Technologies I Love */}
           <div className="mt-16 text-center">
             <h3 className="text-2xl font-bold text-gray-800 mb-8">Technologies I Love Working With</h3>
             <div className="flex flex-wrap justify-center gap-4">
               {[
-                'Flutter', 'Laravel', 'Vue.js', 'React', 'Node.js', 'Python', 
-                'AWS', 'Docker', 'MySQL', 'MongoDB', 'Firebase', 'Git',
+                'Flutter', 'Laravel', 'Vue.js', 'React', 'Node.js', 
+                'AWS', 'Docker', 'MySQL', 'Firebase', 'Git',
                 'TypeScript', 'PHP', 'Dart', 'JavaScript', 'Linux', 'Nginx'
               ].map((tech) => (
                 <span 
@@ -200,17 +204,22 @@ const Skills = () => {
           {/* Skills Summary */}
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="bg-gray-100 rounded-2xl p-8 shadow-neumorphic">
-              <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2">10+</div>
               <div className="text-gray-600">Technologies Mastered</div>
             </div>
             <div className="bg-gray-100 rounded-2xl p-8 shadow-neumorphic">
-              <div className="text-3xl font-bold text-green-600 mb-2">8+</div>
+              <div className="text-3xl font-bold text-green-600 mb-2">5+</div>
               <div className="text-gray-600">Years of Experience</div>
             </div>
+
+             {/*
+
             <div className="bg-gray-100 rounded-2xl p-8 shadow-neumorphic">
               <div className="text-3xl font-bold text-purple-600 mb-2">4</div>
               <div className="text-gray-600">Professional Certifications</div>
             </div>
+            */}
+
           </div>
         </div>
       </div>
