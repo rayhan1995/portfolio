@@ -145,10 +145,10 @@ const Experience = () => {
           {/* Stats Section */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { label: 'Years Experience', value: '8+' },
+              { label: 'Years Experience', value: '5+' },
               { label: 'Projects Completed', value: '50+' },
               { label: 'Happy Clients', value: '25+' },
-              { label: 'App Downloads', value: '10M+' }
+            {/*  { label: 'App Downloads', value: '10M+' } */}
             ].map((stat, index) => (
               <div 
                 key={stat.label}

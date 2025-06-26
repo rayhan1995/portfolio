@@ -3,7 +3,7 @@ import { Code, Smartphone, Globe, Briefcase } from 'lucide-react';
 
 const About = () => {
   const skills = [
-    { icon: Smartphone, title: 'Mobile Development', desc: 'Flutter & Android' },
+    { icon: Smartphone, title: 'Mobile Development', desc: 'Flutter (Android & IOS' },
     { icon: Globe, title: 'Web Development', desc: 'Laravel & Vue.js' },
     { icon: Code, title: 'Full-Stack', desc: 'End-to-end Solutions' },
     { icon: Briefcase, title: 'ICT Consulting', desc: 'Tech Strategy' }
@@ -26,7 +26,7 @@ const About = () => {
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4 animate-fade-in">
-              John Smith
+              Md Rayhan Uddin Bhuyan
             </h1>
             <div className="text-xl md:text-2xl text-gray-600 mb-6 space-y-2">
               <p>Full-Stack Developer • ICT Specialist • Tech Entrepreneur</p>
@@ -80,7 +80,7 @@ const About = () => {
                   <h3 className="text-xl font-semibold text-gray-800 mb-4">Quick Facts</h3>
                   <ul className="space-y-2 text-gray-700">
                     <li>🎯 50+ Projects Delivered</li>
-                    <li>📱 10M+ App Downloads</li>
+                    {/* <li>📱 10M+ App Downloads</li> */}
                     <li>💼 25+ Happy Clients</li>
                     <li>🚀 5 Years Entrepreneurship</li>
                   </ul>
