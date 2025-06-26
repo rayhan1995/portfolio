@@ -18,7 +18,7 @@ const About = () => {
             <div className="inline-block mb-8">
               <div className="w-32 h-32 mx-auto rounded-full bg-gray-100 shadow-neumorphic-large overflow-hidden transform hover:scale-105 transition-transform duration-500">
                 <img 
-                  src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" 
+                  src="https://i.imgur.com/iWJpYZT.jpeg" 
                   alt="Professional headshot"
                   className="w-full h-full object-cover"
                 />
