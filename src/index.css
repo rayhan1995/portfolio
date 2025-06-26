@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Neumorphic Shadow Utilities */
+@layer utilities {
+  .shadow-neumorphic {
+    box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
+  }
+  
+  .shadow-neumorphic-small {
+    box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff;
+  }
+  
+  .shadow-neumorphic-large {
+    box-shadow: 12px 12px 24px #d1d9e6, -12px -12px 24px #ffffff;
+  }
+  
+  .shadow-neumorphic-inset {
+    box-shadow: inset 6px 6px 12px #d1d9e6, inset -6px -6px 12px #ffffff;
+  }
+  
+  .shadow-neumorphic-inset-deep {
+    box-shadow: inset 8px 8px 16px #d1d9e6, inset -8px -8px 16px #ffffff;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+
+/* Improved focus states */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: inset 8px 8px 16px #d1d9e6, inset -8px -8px 16px #ffffff, 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Hover effects for cards */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Typography improvements */
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+/* Button improvements */
+button {
+  transition: all 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
