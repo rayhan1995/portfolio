@@ -33,8 +33,8 @@ const Header = () => {
               <span className="text-blue-600 font-bold text-xl">JS</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-800">John Smith</h1>
-              <p className="text-sm text-gray-600">Full-Stack Developer</p>
+              <h1 className="text-xl font-bold text-gray-800">Rayhan's Portfolio</h1>
+              
             </div>
           </div>
 
