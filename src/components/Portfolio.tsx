@@ -8,7 +8,7 @@ const Portfolio = () => {
     {
       title: 'QR Code & Barcode Scanner',
       category: 'Tools',
-      description: 'Advanced task management app with AI-powered scheduling',
+      description: 'Advanced QR Code & Barcode Scanner App With NO Ads',
       image: 'https://play-lh.googleusercontent.com/ud-SU0KiTPfyrul00INNSFWotT6QmDLdmZ5zWUeScBmqFd2q5d5dUxGz14P3k0nh4Q=w480-h960-rw',
       downloads: '1K+',
       rating: 4.8,
@@ -17,15 +17,15 @@ const Portfolio = () => {
       features: ['QR Scan', 'Barcode Scan', 'Call to Action']
     },
     {
-      title: 'HealthTracker',
-      category: 'Health & Fitness',
-      description: 'Comprehensive health monitoring with wearable integration',
-      image: 'https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=400',
-      downloads: '250K+',
-      rating: 4.6,
-      technologies: ['Flutter', 'HealthKit', 'Charts'],
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.example.healthtracker',
-      features: ['Wearable Sync', 'Health Insights', 'Goal Tracking']
+      title: 'Bangladesh Television | BTV',
+      category: 'Entertainment',
+      description: 'Live Stream of Btv, Btv World, Sangsad, Btv Chattogram',
+      image: 'https://play-lh.googleusercontent.com/jn12e7Nlat38L1l9B4z7bT57hW7_-KqMOzJ67q-yIRMumZjUNJjZClVjznfMkbVrDLBT=w480-h960-rw',
+      downloads: '100K+',
+      rating: 3.8,
+      technologies: ['Flutter', 'Android', 'IOS'],
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.btv.livetv',
+      features: ['Live Tv']
     },
     {
       title: 'ExpenseWise',
