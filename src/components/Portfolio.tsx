@@ -6,15 +6,15 @@ const Portfolio = () => {
 
   const playStoreApps = [
     {
-      title: 'TaskFlow Pro',
-      category: 'Productivity',
+      title: 'QR Code & Barcode Scanner',
+      category: 'Tools',
       description: 'Advanced task management app with AI-powered scheduling',
-      image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=400',
-      downloads: '500K+',
+      image: 'https://play-lh.googleusercontent.com/ud-SU0KiTPfyrul00INNSFWotT6QmDLdmZ5zWUeScBmqFd2q5d5dUxGz14P3k0nh4Q=w480-h960-rw',
+      downloads: '1K+',
       rating: 4.8,
-      technologies: ['Flutter', 'Firebase', 'AI/ML'],
-      playStoreUrl: '#',
-      features: ['Smart Scheduling', 'Team Collaboration', 'Analytics Dashboard']
+      technologies: ['Flutter', 'Firebase','Github'],
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.technoob.qrcode',
+      features: ['QR Scan', 'Barcode Scan', 'Call to Action']
     },
     {
       title: 'HealthTracker',
