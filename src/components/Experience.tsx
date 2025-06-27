@@ -6,46 +6,60 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: 'Senior Full-Stack Developer',
-      company: 'TechCorp Solutions',
-      location: 'San Francisco, CA',
-      period: '2022 - Present',
+      title: 'Co-Founder',
+      company: 'Casify BD',
+      location: 'Zigatola,Dhanmondi,Dhaka',
+      period: 'Nov 2024 - Apr 2025',
       type: 'Full-time',
-      description: 'Leading development of scalable web applications serving 100K+ users daily.',
+      description: 'Co-founder of CasifyBD – an online store specializing in mobile accessories, focused on e-commerce operations and digital growth.',
       achievements: [
-        'Architected microservices infrastructure reducing load times by 60%',
-        'Led team of 5 developers in agile development cycles',
-        'Implemented CI/CD pipelines improving deployment efficiency by 80%'
+        'Launched and managed an online business selling mobile accessories via Facebook and e-commerce platforms.',
+        'Handled product listing, order processing, customer service, and courier coordination.',
+        'Gained practical experience in digital marketing, online sales, and platform operations.'
       ],
-      technologies: ['Laravel', 'Vue.js', 'AWS', 'Docker', 'MySQL']
+      technologies: ['Online Business', 'E-Commerce', 'F-Commerce']
     },
     {
-      title: 'Mobile App Developer',
-      company: 'InnovateMobile',
-      location: 'Austin, TX',
-      period: '2020 - 2022',
-      type: 'Contract',
-      description: 'Specialized in Flutter development for cross-platform mobile applications.',
+      title: 'Asst. Manager-ICT',
+      company: 'Buro Bangladesh',
+      location: 'Madhupur,Tangail',
+      period: 'Sep 2022 - Sep 2024',
+      type: 'Full-time',
+      description: 'Zonal ICT Lead at Buro Bangladesh, managing systems, networks, team operations, software support, and digital services.',
       achievements: [
-        'Developed 8 mobile apps with 500K+ combined downloads',
-        'Achieved 4.8+ average rating across all published apps',
-        'Reduced development time by 40% through reusable component library'
+        'Lead zonal ICT operations, team management, and network/system maintenance.',
+        'Support Core Banking, software testing, reporting, and digital services.',
+        'Conduct ICT training, manage online platforms, and implement new technologies.'
       ],
-      technologies: ['Flutter', 'Dart', 'Firebase', 'REST APIs', 'Google Play Console']
+      technologies: ['Windows Server', 'MikroTik', 'Core Banking Software', 'Microsoft Office Suite']
     },
     {
-      title: 'ICT Consultant & Entrepreneur',
-      company: 'SmithTech Consulting',
-      location: 'Remote',
-      period: '2019 - Present',
-      type: 'Self-employed',
-      description: 'Providing technical consulting and building digital solutions for small to medium businesses.',
+      title: 'Full-Stack Developer (Laravel & Vue.js)',
+      company: 'Next IT Ltd',
+      location: 'Gulshan,Dhaka',
+      period: 'June 2020 - Aug 2022',
+      type: 'Full-time',
+      description: 'Developed full-stack web apps using Vue.js and Laravel Core, with API integration and dashboard features based on business requirements.',
       achievements: [
-        'Successfully consulted for 25+ businesses on digital transformation',
-        'Generated $500K+ revenue through custom software solutions',
-        'Built and sold 2 SaaS products to enterprise clients'
+        'Developed and maintained web apps with Vue.js front-end and Laravel Core back-end (MySQL).',
+        'Implemented user authentication, role-based access, and RESTful APIs.',
+        'Coordinated with business analysts to translate requirements into functional dashboards.'
       ],
-      technologies: ['Business Strategy', 'Project Management', 'Technical Architecture', 'Client Relations']
+      technologies: ['Vue.js', 'Laravel Core', 'MySQL', 'RESTful APIs']
+    },
+     {
+      title: 'Junior Full-Stack Developer',
+      company: 'Storola',
+      location: 'Dhanmondi, Dhaka',
+      period: 'Jan 2020 - May 2020',
+      type: 'Full-time',
+      description: 'Developed full-stack web apps using Vue.js and Laravel Core, with API integration and dashboard features based on business requirements.',
+      achievements: [
+        'Built web apps using Vue.js and Laravel (MySQL).',
+        'Implemented user authentication, role-based access, and RESTful APIs.',
+        'Enhanced ERP and e-commerce features, fixed bugs, and optimized performance.'
+      ],
+      technologies: ['Vue.js', 'Laravel Core', 'MySQL', 'RESTful APIs']
     }
   ];
 
