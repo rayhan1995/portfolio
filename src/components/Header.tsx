@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Download, Mail, Github, Linkedin } from 'lucide-react';
+import { Menu, X, Download, Mail, Github, Linkedin,Briefcase } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +30,7 @@ const Header = () => {
           {/* Logo/Name */}
           <div className="flex items-center space-x-4">
             <div className="w-12 h-12 rounded-full bg-gray-100 shadow-neumorphic flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
-              <span className="text-blue-600 font-bold text-xl">JS</span>
+             <Briefcase className="text-blue-600" size={24} />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-800">Rayhan's Portfolio</h1>
