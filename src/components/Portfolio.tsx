@@ -24,7 +24,7 @@ const Portfolio = () => {
       downloads: '250K+',
       rating: 4.6,
       technologies: ['Flutter', 'HealthKit', 'Charts'],
-      playStoreUrl: '#',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.example.healthtracker',
       features: ['Wearable Sync', 'Health Insights', 'Goal Tracking']
     },
     {
@@ -35,7 +35,7 @@ const Portfolio = () => {
       downloads: '100K+',
       rating: 4.7,
       technologies: ['Flutter', 'Machine Learning', 'Banking APIs'],
-      playStoreUrl: '#',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.example.expensewise',
       features: ['Auto Categorization', 'Budget Alerts', 'Expense Reports']
     }
   ];
@@ -46,9 +46,9 @@ const Portfolio = () => {
       category: 'E-Commerce',
       description: 'Full-featured online marketplace with multi-vendor support',
       image: 'https://images.pexels.com/photos/3584994/pexels-photo-3584994.jpeg?auto=compress&cs=tinysrgb&w=400',
-      technologies: ['Laravel', 'Vue.js', 'MySQL', 'Stripe'],
-      liveUrl: '#',
-      githubUrl: '#',
+      technologies: ['Laravel', 'Vue.js', 'Inertia.js', 'MySQL', 'Stripe'],
+      liveUrl: 'https://demo-ecommerce.example.com',
+      githubUrl: 'https://github.com/yourusername/ecommerce-platform',
       features: ['Multi-vendor', 'Payment Gateway', 'Admin Dashboard', 'Mobile Responsive']
     },
     {
@@ -56,9 +56,9 @@ const Portfolio = () => {
       category: 'Education',
       description: 'Modern LMS with interactive courses and progress tracking',
       image: 'https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&w=400',
-      technologies: ['Laravel', 'Vue.js', 'WebRTC', 'AWS'],
-      liveUrl: '#',
-      githubUrl: '#',
+      technologies: ['Laravel', 'Vue.js', 'Inertia.js', 'WebRTC', 'AWS'],
+      liveUrl: 'https://demo-lms.example.com',
+      githubUrl: 'https://github.com/yourusername/lms-platform',
       features: ['Video Streaming', 'Interactive Quizzes', 'Progress Analytics', 'Certificates']
     },
     {
@@ -66,9 +66,9 @@ const Portfolio = () => {
       category: 'Real Estate',
       description: 'Comprehensive property listing platform with virtual tours',
       image: 'https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=400',
-      technologies: ['Laravel', 'Vue.js', 'Maps API', 'Image Processing'],
-      liveUrl: '#',
-      githubUrl: '#',
+      technologies: ['Laravel', 'Vue.js', 'Inertia.js', 'Maps API', 'Image Processing'],
+      liveUrl: 'https://demo-realestate.example.com',
+      githubUrl: 'https://github.com/yourusername/realestate-portal',
       features: ['Virtual Tours', 'Advanced Search', 'Agent Portal', 'Mobile App']
     }
   ];
@@ -81,6 +81,13 @@ const Portfolio = () => {
   const filteredProjects = activeFilter === 'all' 
     ? allProjects 
     : allProjects.filter(project => project.type === activeFilter);
+
+  // Function to handle external link clicks
+  const handleExternalLink = (url) => {
+    if (url && url !== '#') {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  };
 
   return (
     <section id="portfolio" className="py-20 bg-gray-100">
@@ -145,15 +152,27 @@ const Portfolio = () => {
                   {/* Hover Actions */}
                   <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-2">
                     {project.type === 'mobile' ? (
-                      <button className="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200">
+                      <button 
+                        onClick={() => handleExternalLink(project.playStoreUrl)}
+                        className="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200 cursor-pointer"
+                        title="View on Play Store"
+                      >
                         <Download size={16} className="text-gray-700" />
                       </button>
                     ) : (
                       <>
-                        <button className="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200">
+                        <button 
+                          onClick={() => handleExternalLink(project.liveUrl)}
+                          className="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200 cursor-pointer"
+                          title="Live Demo"
+                        >
                           <ExternalLink size={16} className="text-gray-700" />
                         </button>
-                        <button className="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200">
+                        <button 
+                          onClick={() => handleExternalLink(project.githubUrl)}
+                          className="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200 cursor-pointer"
+                          title="View Code"
+                        >
                           <Github size={16} className="text-gray-700" />
                         </button>
                       </>
@@ -218,17 +237,27 @@ const Portfolio = () => {
                   {/* Action Buttons */}
                   <div className="flex space-x-3">
                     {project.type === 'mobile' ? (
-                      <button className="flex-1 bg-gray-100 shadow-neumorphic hover:shadow-neumorphic-inset px-4 py-2 rounded-full text-sm font-medium text-gray-700 transition-all duration-300 flex items-center justify-center space-x-2">
+                      <button 
+                        onClick={() => handleExternalLink(project.playStoreUrl)}
+                        className="flex-1 bg-gray-100 shadow-neumorphic hover:shadow-neumorphic-inset px-4 py-2 rounded-full text-sm font-medium text-gray-700 transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer hover:bg-gray-50"
+                      >
                         <Play size={14} />
                         <span>View on Play Store</span>
                       </button>
                     ) : (
                       <>
-                        <button className="flex-1 bg-gray-100 shadow-neumorphic hover:shadow-neumorphic-inset px-4 py-2 rounded-full text-sm font-medium text-gray-700 transition-all duration-300 flex items-center justify-center space-x-2">
+                        <button 
+                          onClick={() => handleExternalLink(project.liveUrl)}
+                          className="flex-1 bg-gray-100 shadow-neumorphic hover:shadow-neumorphic-inset px-4 py-2 rounded-full text-sm font-medium text-gray-700 transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer hover:bg-gray-50"
+                        >
                           <Eye size={14} />
                           <span>Live Demo</span>
                         </button>
-                        <button className="bg-gray-100 shadow-neumorphic hover:shadow-neumorphic-inset px-4 py-2 rounded-full text-sm font-medium text-gray-700 transition-all duration-300">
+                        <button 
+                          onClick={() => handleExternalLink(project.githubUrl)}
+                          className="bg-gray-100 shadow-neumorphic hover:shadow-neumorphic-inset px-4 py-2 rounded-full text-sm font-medium text-gray-700 transition-all duration-300 cursor-pointer hover:bg-gray-50"
+                          title="View Source Code"
+                        >
                           <Github size={14} />
                         </button>
                       </>
@@ -246,7 +275,13 @@ const Portfolio = () => {
               <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
                 Let's discuss how we can bring your ideas to life with innovative mobile and web solutions.
               </p>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <button 
+                onClick={() => {
+                  // You can replace this with your contact form or email
+                  window.location.href = 'mailto:your-email@example.com?subject=Project Collaboration';
+                }}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
+              >
                 Start a Project
               </button>
             </div>
